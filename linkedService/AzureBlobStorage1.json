@@ -1,9 +1,8 @@
 {
 	"name": "AzureBlobStorage1",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"parameters": {
-			"StorageAccount": {
+			"StorageAccountName": {
 				"type": "String",
 				"defaultValue": "swgsadftest20260903"
 			}
@@ -21,5 +20,6 @@
 				"secretName": "swgsadftestKey20260903"
 			}
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
