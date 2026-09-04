@@ -10,7 +10,7 @@
 		"annotations": [],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
-			"connectionString": "DefaultEndpointsProtocol=https;AccountName=@{linkedService().StorageAccount};EndpointSuffix=core.windows.net;",
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=@{linkedService().StorageAccountName};EndpointSuffix=core.windows.net;",
 			"accountKey": {
 				"type": "AzureKeyVaultSecret",
 				"store": {
