@@ -1,0 +1,23 @@
+{
+	"name": "TestFileOutput260903",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageLinkedServer260903",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"accountName": "swgsadftestuat260903",
+				"secretName": "swgsadftestUATKey20260903"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "outputdirectory",
+				"container": "outputcontainer"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

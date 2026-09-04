@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "CopyFile260309",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -35,20 +35,20 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "InputDataset",
+						"referenceName": "TestFileDataSet",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "OutputDataSet",
+						"referenceName": "TestFileOutput260903",
 						"type": "DatasetReference"
 					}
 				]
 			}
 		],
 		"annotations": [],
-		"lastPublishTime": "2026-09-04T09:16:40Z"
+		"lastPublishTime": "2026-09-04T10:29:16Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }
