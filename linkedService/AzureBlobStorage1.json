@@ -1,9 +1,8 @@
 {
 	"name": "AzureBlobStorage1",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"parameters": {
-			"StorageAccount": {
+			"StorageAccountName": {
 				"type": "String",
 				"defaultValue": "swgsadftest20260903"
 			}
@@ -11,7 +10,7 @@
 		"annotations": [],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
-			"connectionString": "DefaultEndpointsProtocol=https;AccountName=@{linkedService().StorageAccount};EndpointSuffix=core.windows.net;",
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=@{linkedService().StorageAccountName};EndpointSuffix=core.windows.net;",
 			"accountKey": {
 				"type": "AzureKeyVaultSecret",
 				"store": {
@@ -21,5 +20,6 @@
 				"secretName": "swgsadftestKey20260903"
 			}
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
